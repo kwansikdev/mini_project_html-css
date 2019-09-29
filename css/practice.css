@@ -1,0 +1,928 @@
+@charset "utf-8";
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 400;
+}
+
+/* a11y-hidden 설정 */
+.a11y-hidden {
+    background-color: red;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+/* header & 메인 홈 */
+.home {
+    background: #292929;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #f24d4c;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+    width: 350px;
+    height: 450px;
+}
+
+.home span {
+    order: -1;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.home-nav {
+    margin-bottom: 19px;
+}
+
+.home-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+
+.home-nav li {
+    height: 30px;
+    padding: 0 20px;
+}
+
+.home-nav ul li a {
+    font-size: 1.6rem;
+}
+
+.home-nav ul a:hover::after {
+    content: "";
+    display: block;
+    height: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+
+/* about 페이지 */
+.melanie-pic {
+    position: absolute;
+    max-width: 100px;
+    top: 50px;
+    right: calc(0% - 50px);
+}
+
+.about-page {
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+
+.about-logo {
+    background: #f8484e;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    /* background: aqua; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.about-nav-list {
+    /* background: pink; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.about-nav {
+    font-size: 1.4rem;
+
+}
+
+
+.about-h2 {
+    margin: 0;
+}
+
+.about-nav ul {
+    list-style-type: none;
+    margin: 0 0 45px 0;
+    padding: 10px 0;
+    display: flex;
+    font-weight: 700;
+}
+
+.about-nav li {
+    text-align: center;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.nav-hover:hover::after {
+    content: "";
+    display: block;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+/* about section */
+.about-section{
+    /* background-color: yellow; */
+    width: 50%;
+    padding: 60px 100px 60px 60px;
+    line-height: 2;
+    font-size: 1.4rem;
+}
+
+.about-section-introduce {
+    /* background-color: pink; */
+}
+
+.about-section-introduce p:nth-child(1) {
+    /* background: aqua; */
+    font-weight: 700;
+}
+
+.about-section-introduce p:nth-child(2) {
+    /* background: aqua; */
+}
+
+.about-section2-work2{
+    /* background-color: #93DAFF; */
+    font-weight: 700;
+}
+
+.about-section2-work2 p,
+.about-section2-work2 ol {
+    /* background-color: pink; */
+    font-weight: initial;
+    padding : 0;
+}
+
+.about-section2-work2 ol>li{
+    list-style-type : none;
+}
+
+.about-section2-work2 ol>li::before{
+    color: #f7484d;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.about-section2-work2 ol>li:nth-child(1)::before{
+    content:"1.";
+}
+
+.about-section2-work2 ol>li:nth-child(2)::before{
+    content:"2. ";
+}
+
+.about-section2-work2 ol>li:nth-child(3)::before{
+    content:"3. ";
+}
+
+.about-section2-work2 ol>li:nth-child(4)::before{
+    content:"4. ";
+}
+
+.about-section2-work2 span{
+    /* background-color: #93DAFF; */
+    font-weight: 700;
+    padding: 1px;
+}
+
+.about-imgbox {
+    /* background-color: aqua; */
+    display: flex;
+}
+.about-imgbox img {
+    /* background: yellow; */
+    width: 20%;
+    margin-top: 20px;
+}
+
+.about-imgbox p {
+    /* background-color: yellow; */
+    padding-left: 20px;
+    margin: auto 0;
+}
+
+
+/* .about-imgbox {
+    background-color: aqua;
+} */
+
+
+/* ​​
+.about-section2-work2 span{
+    background-color: #93DAFF;
+    font-weight: 700;
+    padding: 1px;
+}
+​
+.about-section2-work2 ul>li{
+    background-color: #93DAFF;
+    list-style : disc; 
+}
+​
+​
+.about-section2-work2 div{
+    display : flex ;
+    flex-direction: row;
+}
+​
+.about-section2-work2 div>img{
+    width: 20%;
+    margin: 0 20px;
+}
+​
+.about-section2-work2 div>p{
+    background-color: orange;
+    font-weight: 700;
+    margin: 0;
+} */
+
+/* about END */
+
+/* work 페이지 */
+.work-page {
+    width: 100vw;
+    display: flex;
+}
+
+.work-page-nav {
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+
+.work-section {
+    /* background: pink; */
+    height: 50vh;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-content-nav ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+    display: flex;
+}
+
+.work-nav ul {
+    list-style-type: none;
+    margin-bottom: 45px;
+    font-weight: 700;
+    padding: 0;
+    display: flex;
+
+}
+
+.work-nav li,
+.work-content-nav li {
+    height: 30px;
+    padding: 0 10px;
+}
+
+.work-content-nav ul li a:hover {
+    color: red;
+}
+
+/* .work-content-nav ul li:nth-child(n+2)::before,
+.work-nav ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+} */
+
+.work-nav ul li a:hover::after {
+    content: "";
+    display: block;
+    height: 10px;
+    border-bottom: 2px solid red;
+}
+
+
+/* work-content 시작 */
+.work-content {
+    width: 50vw;
+    /* transition 효과 */
+    transition-property: width;
+    transition-duration: 2s, 2s;
+}
+
+/* work-page hover 속성 */
+.work-content:hover {
+    width: 75vw;
+    /* height: 100%; */
+}
+
+/* .work-austria-tourism:hover {
+    width: 75vw; */
+    /* overflow: visible;
+    height: 100%; */
+}
+
+/* .work-puma:hover {
+    width: 75vw; */
+    /* overflow: visible;
+    height: 100%; */
+}
+
+/* .work-austria-tourism:hover ~ .work-puma {
+    display: none;
+}  */
+
+
+/* .work-puma:hover .work-contet > .work-austria-tourism {
+    display: none;
+}
+/* END */
+
+
+.work-content h3, h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.work-austria-tourism-img,
+.work-puma-img,
+.work-red-bull-img,
+.work-myComfort-img {
+    color: #fff;
+}
+
+
+.work-austria-tourism {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s, 2s;
+}
+
+.work-austria-tourism-img{
+    background-image: url("/css/images/header-austria-tourism.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.wat-1 p,
+.wp-1 p {
+    width: 650px;
+    margin: 100px auto;
+    font-size: 1.4rem;
+    line-height: 2.0;
+}
+
+.wat-1 img {
+    width: 100%;
+}
+
+/* wat-2  */
+.wat-2 {
+    background: #e1001a;
+    margin-top: 100px;
+    margin: 0;
+}
+
+.wat-2 h5 {
+    font-size: 2.0rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: block;
+    width: 650px;
+    color: #fffeff;
+}
+
+.wat-2 span {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.wat-2 p {
+    width: 650px;
+    margin: 0 auto 40px auto;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 2.0;
+}
+
+.wat-2 figure {
+    background: #efefef;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wat-2 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wat-2 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wat-2 figure img {
+    width: 100%;
+}
+
+/* wat-3 */
+.wat-3 h5 {
+    font-size: 2.0rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: block;
+    width: 650px;
+}
+
+.wat-3 span {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.wat-3 p {
+    width: 650px;
+    margin: 0 auto 20px auto;
+    font-size: 1.4rem;
+    line-height: 2.0;
+}
+
+.wat-3 figure {
+    background: #efefef;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wat-3 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wat-3 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wat-3 figure img {
+    width: 100%;
+}
+
+/* wat-4 */
+.wat-4 {
+    background: #e1001a;
+    margin-top: 100px;
+    margin: 0;
+}
+
+.wat-4 h5 {
+    font-size: 2.0rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: block;
+    width: 650px;
+    color: #fffeff;
+
+}
+
+.wat-4 span {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.wat-4 p {
+    width: 650px;
+    margin: 0 auto 40px auto;
+    font-size: 1.4rem;
+    color: #fffeff;
+    line-height: 2.0;
+}
+
+.wat-4 figure {
+    background: #efefef;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wat-4 figure img {
+    width: 100%;
+}
+
+.order {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background: #efefef;
+}
+
+.order p {
+    display: block;
+    font-size: 1.2rem;
+    
+}
+/* work-austria-tourism END */
+
+/* work-puma */
+.work-puma {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s, 2s;
+}
+
+.work-puma-img {
+    background-image: url("/css/images/header-puma.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* work-p */
+.wp-1 figure {
+    background: #2a2a2a;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wp-1 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fffeff;
+}
+
+.wp-1 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wp-1 figure img {
+    width: 100%;
+}
+
+.wp-2 h5 {
+    font-size: 2.0rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: block;
+    width: 650px;
+}
+
+.wp-2 span {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.wp-2 p {
+    width: 650px;
+    margin: 0 auto 40px auto;
+    font-size: 1.4rem;
+    line-height: 2.0;
+}
+
+.wp-2-img-1 {
+    background: #efefef;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wp-2-img-1 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wp-2-img-1 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wp-2-img-1 img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.wp-2-img-2 {
+    background: #2a2a2a;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wp-2-img-2 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fffeff;
+}
+
+.wp-2-img-2 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wp-2-img-2 img {
+    width: 100%;
+}
+
+.wp-2-img-2 p {
+    color: #fffeff;
+    width: 460px;
+    margin: 100px auto 0 auto;
+    padding-bottom: 50px;
+    font-size: 1.4rem;
+    line-height: 2.0;
+}
+
+.wp-3 h5 {
+    font-size: 2.0rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: block;
+    width: 460px;
+}
+
+.wp-3 span {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.wp-3 p {
+    width: 460px;
+    margin: 0 auto 40px auto;
+    font-size: 1.4rem;
+    line-height: 2.0;
+}
+
+.wp-3-img-1 {
+    background: #2a2a2a;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wp-3-img-1 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fffeff;
+}
+
+.wp-3-img-1 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wp-3-img-1 img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.wp-3-img-2 {
+    background: #efefef;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.wp-3-img-2 figcaption {
+    /* display: inline-block; */
+    margin: 0 0 50px 0;
+    font-size: 2.0rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wp-3-img-2 figcaption span {
+    display: block;
+    font-size: 1.2rem;
+    color: #e1001a;
+}
+
+.wp-3-img-2 img {
+    width: 100%;
+}
+/* work-puma END */
+
+
+/* Red-Bull */
+.work-red-bull {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s, 2s;
+}
+
+.work-red-bull-img {
+    background-image: url("/css/images/header-redbull.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* work-myComfort */
+.work-myComfort {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s, 2s;
+}
+
+.work-myComfort-img {
+    background-image: url("/css/images/header-windhager.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* footer - contact 페이지 */
+
+.contact-page {
+    width: 100vw;
+    display: flex;
+}
+.contact-page-nav {
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    background: #292929;
+}
+
+.contact-section {
+    background: #292929;
+    height: 50vh;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-ul {
+    list-style-type: none;
+    margin-bottom: 45px;
+    font-weight: 700;
+    padding: 0;
+    display: flex;
+    color: red;
+}
+.contact-ul li {
+    height: 30px;
+    padding: 0 10px;
+}
+
+/* .contact-ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+} */
+
+.contact-ul li a:hover::after {
+    content: "";
+    display: block;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.contact-section2 {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-section2 h3 {
+    /* background-color: yellow; */
+    font-size: 1.6rem;
+}
+
+.contact-section2 p {
+    /* background-color: lime; */
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+
+.contact-section2 span {
+    /* background: skyblue; */
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+.social-nav {
+    /* background: orange; */
+}
+
+.social-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-nav ul li {
+    padding: 0 30px;
+}
+
+.social-nav ul li img {
+    width: 35px;
+    height: 35px;
+}
